@@ -1,0 +1,47 @@
+#uploader {
+  margin: 2% 10%;
+}
+
+#uploader h3 {
+  font-family: monospace;
+  background-color: #CCCCCC;
+  text-align: center;
+}
+
+#uploader p {
+  font-family: monospace;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 2%;
+  font-size: .9em;
+}
+
+#uploader, #uploader button[type="submit"]{
+  font-size: 16px;
+}
+
+#uploader .file-container {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  color: #000000;
+  padding: 2px;
+}
+
+#uploader .file-container:hover {
+  color: #0046AD;
+}
+
+#uploader .file-container [type="file"] {
+  cursor: inherit;
+  display: block;
+  font-size: 23px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}

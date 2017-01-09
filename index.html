@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title></title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="uploader">
+  <h3>Zip File Uploader to AHCSSCANP01</h3>
+  <p>
+  This tool uploads multiple zip files to the server, decompresses those zip files, renames individual files to comply with the 8-byte database field limitation, and copies the files to the CLFBUR folder on AHCSSCANP01 for auto-indexing.
+  </p>
+  <!-- action="http://api.ahcsdev.ibx.com/claimweb/uploader" -->
+  <form enctype="multipart/form-data" method="post" name="fileinfo">
+    <label for="up" class="file-container">
+      Click here to browse to files!
+      <input type="file" id="up" multiple/>
+    </label>
+    <button type="submit">upload!!</button>
+  </form>
+  <div id="message"></div>
+</div> <!-- end uploader div -->
+  <script src="src/uploader.js"></script>
+</body>
+</html>
